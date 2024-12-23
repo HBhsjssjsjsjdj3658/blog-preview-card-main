@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "figtree";
+    src: url(assets\fonts\static\Figtree-SemiBold.ttf);
+}
+*:root{
+    --Yellow: hsl(47, 88%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Gray500: hsl(0, 0%, 42%);
+
+    --Gray950: hsl(0, 0%, 7%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.card{
+    background-color: var(--White);
+    border: 1.3px solid;
+    border-radius: 17px;
+    padding: 1.5em;
+    transform: scale(0.8);
+    box-shadow: 6px 6px black;
+    transform: scale(0.7);
+}
+.card img{
+    border-radius: inherit;
+    margin-bottom: 20px;
+    display: block;
+}
+.learning{
+    background-color: var(--Yellow);
+    color: black;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 0.92rem;
+    margin-bottom: 12px;
+}
+h2{
+    margin: 18px 0;
+}
+h2 a:hover{
+    color: var(--Yellow);
+}
+h2 a{
+    text-decoration: none;
+    color: black;
+}
+.main-para{
+    max-width: 37ch;
+    color: var(--Gray500);
+    line-height: 23px;
+}
+.card-footer{
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+.card-footer p{
+    transform: translateY(50%);
+    font-weight: bold;
+}
+.card-footer img{
+    width: 40px;
+    float: left;
+    margin-right: 10px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (max-width:430px) {
+    .card{
+        transform: scale(0.99);
+    }
+}
+
+
+
+/* body{
+    background-color: var(--Yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'figtree',sans-serif;
+}
+.card{
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 382px;
+    box-shadow: 9px 9px black;
+    transform: scale(0.7);
+}
+.card img{
+    border-radius: inherit;
+}
+.learn{
+    background-color: var(--Yellow);
+    margin-top: 19px;
+    margin-bottom: 12px;
+    padding: 9px 13px;
+    border-radius: 7px;
+    display: inline-block;
+    font-weight: bold;
+}
+.card .publish{
+    font-size: 15px;
+    color: black;
+}
+.card h2{
+    color: black;
+    margin: 23px 0;
+}
+.card h2 a{
+    text-decoration: none;
+    color: black;
+}
+.card h2 a:hover{
+    color: var(--Yellow);
+}
+.card .footer img{
+    width: 43px;
+    float: left;
+    margin-right: 15px;
+}
+.card .main_para{
+    line-height: 1.450em;
+}
+.card .avater_name{
+    transform: translateY(51%);
+}
+.card .footer{
+    margin-top: 25px;
+}
+
+@media screen and (max-width:430px) {
+    .card{
+        background-color: white;
+        border: 1.5px solid black;
+        border-radius: 20px;
+        padding: 25px;
+        max-width: 382px;
+        width: 85%;
+        box-shadow: 9px 9px black;
+        transform: scale(1);
+        overflow-x: hidden;
+    }
+    .card .svg_box{
+        overflow: hidden;
+        border-radius: inherit;
+    }
+    .attribution{
+        position: absolute;
+        bottom: 30px;
+    }
+} */
